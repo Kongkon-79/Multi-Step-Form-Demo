@@ -19,7 +19,7 @@ const MultiStepForm: React.FC = () => {
   const methods = useForm<FormData>({
     mode: "onChange",
     defaultValues: {
-      name: "",
+      firstName: "",
       image: undefined,
       category: "",
     },
@@ -65,7 +65,7 @@ const MultiStepForm: React.FC = () => {
                   onClick={prevStep}
                   className="btn btn-secondary"
                 >
-                  BackMultiStepForm
+                  Back
                 </button>
               )}
               <button
